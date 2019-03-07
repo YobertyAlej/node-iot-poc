@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple IoT platform - API",
+  "main": "server.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "DEBUG=iot:* nodemon server.js",
+    "test-dev": "DEBUG=iot:* ava tests/ --verbose",
+    "test": "ava tests/ --verbose"
+  },
+  "author": "@YobertyAlej <gyoberty@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^1.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "nodemon": "^1.18.9",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.2.2",
+    "standard": "^12.0.1",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "db": "file:../db",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "express-asyncify": "^1.0.0",
+    "express-jwt": "^5.3.1",
+    "express-jwt-permissions": "^1.2.3",
+    "jsonwebtoken": "^8.4.0",
+    "agent": "file:../agent"
+  }
+}

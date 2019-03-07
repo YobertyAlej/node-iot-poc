@@ -1,0 +1,39 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "A simple IoT platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "example": "node examples/index.js",
+    "test": "DEBUG=iot:* nyc --reporter=lcov ava tests/ --verbose",
+    "setup": "DEBUG=iot:* node setup.js",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/YobertyAlej/iot-platform.git"
+  },
+  "author": "@YobertyAlej",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/YobertyAlej/iot-platform/issues"
+  },
+  "homepage": "https://gitlab.com/YobertyAlej/iot-platform#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^13.1.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.2.0",
+    "sqlite3": "^4.0.4",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^6.2.1",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.2"
+  }
+}

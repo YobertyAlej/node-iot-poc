@@ -1,0 +1,26 @@
+{
+  "name": "mqtt",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A simple IoT Platform - MQTT Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "DEBUG=iot:* nodemon server.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@YobertyAlej <gyoberty@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.8",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "db": "file:../db",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "mosca": "^2.8.3",
+    "redis": "^2.8.0"
+  }
+}

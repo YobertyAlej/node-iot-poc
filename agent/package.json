@@ -1,0 +1,23 @@
+{
+  "name": "agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple IoT platform - Agent",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@YobertyAlej <gyoberty@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^12.0.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "defaults": "^1.0.3",
+    "mqtt": "^2.18.8",
+    "uuid": "^3.3.2"
+  }
+}
